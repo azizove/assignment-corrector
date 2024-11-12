@@ -1,15 +1,17 @@
 {
-    "projects": {
-      "frontend": {
-        "src": "apps/frontend",
-        "buildCommand": "yarn build",
-        "outputDirectory": "out"
-      },
-      "backend": {
-        "src": "apps/backend",
-        "buildCommand": "yarn build",
-        "outputDirectory": "dist"
-      }
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/frontend/package.json",
+      "use": "@vercel/node",
+      "buildCommand": "yarn build",
+      "outputDirectory": "out"
+    },
+    {
+      "src": "apps/backend/package.json",
+      "use": "@vercel/node",
+      "buildCommand": "yarn build",
+      "outputDirectory": "dist"
     }
-  }
-  
+  ]
+}
