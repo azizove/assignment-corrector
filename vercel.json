@@ -1,0 +1,15 @@
+{
+    "projects": {
+      "frontend": {
+        "src": "apps/frontend",
+        "buildCommand": "yarn build",
+        "outputDirectory": "out"
+      },
+      "backend": {
+        "src": "apps/backend",
+        "buildCommand": "yarn build",
+        "outputDirectory": "dist"
+      }
+    }
+  }
+  
