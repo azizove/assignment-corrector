@@ -18,6 +18,11 @@
   "packageManager": "yarn@1.22.19",
   "workspaces": [
     "apps/*",
-    "packages/*"
-  ]
+    "packages/*",
+    "libs/*"
+  ],
+  "dependencies": {
+    "g": "^2.0.1",
+    "vercel": "^37.14.0"
+  }
 }
